@@ -2858,23 +2858,7 @@
     text-halo-fill: @standard-halo-fill;
   }
 
-
-  [feature = 'aeroway_aerodrome']['access' != 'private']['icao' != null]['iata' != null][zoom >= 10][zoom < 13] {
-    [way_pixels <= 192000],
-    [way_pixels = null] {
-      text-name: "[iata]";
-      text-size: @standard-font-size;
-      text-wrap-width: @standard-wrap-width;
-      text-line-spacing: @standard-line-spacing-size;
-      text-fill: darken(@airtransport, 15%);
-      text-dy: 10;
-      text-face-name: @oblique-fonts;
-      text-halo-radius: @standard-halo-radius;
-      text-halo-fill: @standard-halo-fill;
-    }
-  }
-
-  [feature = 'aeroway_aerodrome']['access' != 'private']['icao' != null]['iata' != null][zoom >= 13][zoom < 17],
+  [feature = 'aeroway_aerodrome']['access' != 'private']['icao' != null]['iata' != null][zoom >= 11][zoom < 17],
   [feature = 'aeroway_aerodrome']['access' = 'private'][zoom >= 13][zoom < 18],
   [feature = 'aeroway_aerodrome']['icao' = null][zoom >= 13][zoom < 18],
   [feature = 'aeroway_aerodrome']['iata' = null][zoom >= 13][zoom < 18] {
